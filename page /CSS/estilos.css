@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+:root{
+  --padding-container: 100px 0;
+  background-color: #000000;
+ 
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
+  padding: var(--padding-container);
+
+}
+
+.hero{
+width: 100%;
+
+
+max-height: 1400px;
+position: relative;
+
+color: rgb(241, 246, 245);
+
+
+}
+
+img{
+  width: 100%;
+  
+}
+
+.hero::before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #ffffff00;
+border: #000000;
+
+z-index: -1;
+
+}
+
+/* Nav */
+.nav__title{
+font-size: 25px;
+font-family: sans-serif;
+color: #000000;
+
+
+}
+@media (max-width:650px){
+.nav__title{
+  font-size: 20px;
+  font-family: sans-serif;
+  
+}
+.nav__title img{
+  margin-left: 140px;
+ } 
+ }    
+
+.nav{
+--padding-container:0;
+height: 100%;
+display: flex;
+
+
+}
+.aviso{
+  width: 100%;
+}
+
+.nav__link{
+margin-left: auto;
+padding: 0%;
+display: grid;
+grid-auto-flow: column;
+grid-auto-columns: max-content;
+gap: 2em;
+color: #000000;
+}
+
+.nav__items{
+list-style: none;
+border: #000000;
+}
+@media (max-width:650px){
+.nav__items{
+  
+  font-family: sans-serif;
+
+  list-style: circle;
+  
+}
+ }
+
+.nav__links{
+color: #000000;
+text-decoration: none;
+font-size: 20px;
+font-family: sans-serif;
+
+}
+@media (max-width:650px){
+.nav__links{
+  
+  font-family: sans-serif;
+
+  color: #fff;
+  
+}
+ }    
+.nav__menu{
+margin-left: -180px;
+cursor: pointer;
+display: none;
+}
+.nav__img{
+display: block;
+width: 60px;
+}
+.nav__close{
+display: var(--show, none);
+}
+/* hero container */
+.hero__container{
+max-width: 1400px;
+--padding-container:0;
+display: grid;
+grid-auto-rows: max-content;
+align-content: center;
+gap: 1em;
+padding-bottom: 100px;
+text-align: center; 
+color: #ffffff;
+}
+
+.hero__title{
+font-size: 3rem;
+text-align: center;
+color: #ffffff;
+ 
+}
+.hero_paragraph{
+margin-bottom: 20px;
+text-align: left;
+color: #000000;
+}
+.cta{
+display: inline-block;
+background-color: #ffffff;
+justify-self: center;
+color: #000000;
+text-decoration: none;
+padding: 13px 30px;
+border-radius: 15px;
+align-items: flex-start;
+}
+
+/* about*/
+.about{
+text-align: center;
+color: #ffffff;
+}
+.subtitle{
+color: var(--color-tittlecolor);
+font-size: 2rem;
+margin-bottom: 25px;
+
+
+}
+.about__paragraph{
+line-height: 1.7;
+}
+.about__main{
+padding-top: 80px;
+display: grid;
+width: 90%;
+margin: 0 auto;
+gap: 1em;
+overflow: hidden;
+grid-template-columns: repeat(auto-fit, minmax(260px,auto));
+
+}
+
+.about__icons{
+display: grid;
+gap: 1em;
+justify-items: center;
+width: 260px;
+overflow: hidden;
+margin: 0 auto;
+}
+.about__icon{
+width: 60px;
+
+}
+
+
+
+/* knowledge */
+.know-ledge{
+background-color: #ffdd00;
+background-position: 0 0,10px 10px;
+overflow: hidden;
+border-radius: 20px;
+color: #000000;
+}
+
+.knowledge__img{
+border-radius: 20px;
+}
+
+.knowledge__container{
+display: grid;
+gap: 1em;
+align-items: center;
+
+}
+.knowledge__picture{
+max-width: 500px;
+
+}
+.knowledge__paragraph{
+line-height: 1.7;
+margin-bottom: 15px;
+text-align-last: center;
+}
+.knowledge__picture{
+width: 100%;
+display: block;
+
+}
+.knowledge__texts{
+text-align: center;
+}
+
+@media screen and (max-width: 790px){
+.knowledge__img {
+  margin: 30px 100px 10px 1px;
+   width: 250px;
+ }
+ .knowledge__img{
+   grid-template-columns:  1fr;
+   place-items: center;
+ }
+}
+
+@media (max-width:650px){
+.knowledge__container {
+    display: block;
+}
+}
+
+/*REQUISITOS DE PRESTAMO  */
+.home-requisites {
+background-color: #73daec;
+border-radius: 30px;
+
+background-size: cover;
+
+color: rgb(0, 0, 0);
+margin: 135px 300px 100px 500px; 
+}
+
+.home-requisites h2{
+color: rgb(0, 0, 0);
+font-weight: bold;
+width: 270px;
+text-align: center;
+
+}
+
+.home-requisites li {
+background: url(https://static.kueski.com/v2/pics/home/bullet_check_square-abfc4d422d7918cd7c72bee49f6cb1e93651ab3efa49ba514c880136a349b3e5.svg) no-repeat left top;
+background-size: 23px;
+padding: 0 0 10px 40px;
+list-style: none;
+font-size: 20px;
+
+}
+
+@media (max-width:480px){
+.home-requisites  {
+    margin: auto;
+    font-family: sans-serif;
+}
+}
+
+
+
+
+
+
+.hero__container{
+background-color: #00000000;
+
+
+}
+
+
+.container.about {
+background-image: url("/IMAGES/earth1.jpg");
+background-size: cover;
+opacity: 1;
+
+}
+
+
+@media (max-width:480px){
+body{
+  background-color: #00000000;
+  display: block;
+}
+.hero__container{
+  background-color: #00000000;
+  background-size: cover;
+
+}
+.container.about {
+  background-color: #00000000;
+  background-size: cover;
+}
+
+}
+
+
+
+
+
+@media (max-width:480px){
+.preview{
+  background: #00000000;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+}
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px){
+button{
+  margin-left: 68%;
+    
+}
+.form{
+  width: 330px;
+}
+.tab{
+  border-collapse: collapse;
+  text-align: center;
+  font-family: arial;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(23, 52, 65);
+  display: block;
+
+}
+
+}
+
+
+
+
+
+/* TESTIMONY */
+.testimony{
+
+background: rgba(72, 134, 126, 0);
+color: #000000;
+
+
+}
+.testimony-container{
+display: grid;
+
+gap: 1em;
+align-items: center;
+
+}
+.testimony-body{
+display: grid;
+grid-template-columns: 1fr max-content;
+justify-content: space-between;
+align-items: center;
+gap: 2em;
+grid-column: 2/3;
+grid-row: 1/2;
+opacity: 0;
+pointer-events: none;
+
+
+}
+.testimony-body{
+pointer-events: unset;
+opacity: 1;
+transition: opacity 1.5s ease-in-out;
+}
+
+
+.testimony-img{
+width: 250px;
+height: 250px;
+border-radius: 20%;
+object-fit: cover;
+object-position: 50% 30%;  
+}
+.testimony-text{
+max-width: 700px; 
+text-align: center;
+}
+.testimony-course{
+
+color: rgb(255, 255, 255);
+display: inline-block;
+padding: 5px;
+}
+.testimony-arrow{
+width: 90%;
+cursor: pointer;
+
+}
+
+@media (max-width:650px){
+.testimony-body{
+    display: block;
+
+  
+    
+    
+}
+.testimony-container{
+  display: block;
+}
+
+.btn{
+  text-align: center;
+  justify-content: center;
+  
+
+}
+
+.atoms{
+  justify-content: center;
+  align-items: center;
+
+}
+.reseña {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #fff;
+}
+.empresa{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #fff;
+
+}
+}
+
+
+
+
+.btn {
+  background-color: #00ff1e;
+  color: #ffffff;
+  font-size: 14px;
+  margin-left: 25%;
+  border: 1px solid #15ff00;
+  border-radius: 35px;
+  padding: 12px 40px;
+  cursor: pointer;
+  
+}
+.atoms{
+  width: 60%;
+  justify-content: center;
+  margin: 60px;
+
+}
+.atoms{
+  width: 60%;
+}
+
+
+
+
+
